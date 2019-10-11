@@ -1,0 +1,130 @@
+h1{
+  font-family: Verdana, sans-serif;
+  color: #FFFFFF;
+  font-size: 1.6em ;
+  font-weight: bold;
+  line-height: 38px;
+  padding-bottom: 50px;
+}
+
+h2{
+  font-family: Verdana, sans-serif;
+  color: #FFFFFF;
+  font-size: 1.1em ;
+}
+
+img {
+width: 100%;
+height: auto;
+}
+
+.image{
+width: 60em;
+display: block;
+margin-top: 30px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.blocimage{
+  display: block;
+  position: absolute;
+  text-align: center;
+  background-color: rgba(12, 12, 12, 0.7);
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 250px;
+  padding: 60px;
+  scroll-behavior: auto;
+  }
+
+.scrolldown{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+
+  transform: translateY(-80px) translateX(-50%)
+    rotate(45deg);
+}
+
+.scrolldown span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid #000;
+  border-right: 3px solid #000;
+  animation: animate 1.5s linear infinite;
+  opacity: 0;
+}
+
+.scrolldown span:nth-child(1)
+{
+  transform: translate(-15px,-15px);
+  animation-delay: -0.2s;
+}
+
+@keyframes animate {
+  0%{
+  top: -5px;
+  left: -5px;
+  opacity:0;
+  }
+  25%{
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  }
+}
+
+
+h3{
+  font-family: 'Patua One', cursive;
+  text-decoration: underline;
+  font-size: 4em;
+  margin-bottom: 50px;
+  margin-bottom: 100px;
+  margin-top: 150px;
+}
+
+p{
+  font-family: Verdana, sans-serif;
+  font-size: 0.9em ;
+  line-height: 24px;
+}
+
+.bloctitre{
+  font-family: Verdana, sans-serif;
+  font-size:1.2em ;
+  font-weight: bold;
+  line-height: 28px;
+  max-width:50em;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bloc {
+  column-count: 2;
+  max-width: 60em;
+  text-align: justify;
+  min-height:300px;
+  grid-column-gap: 40px;
+  margin-top : 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blocfin {
+  font-family: Verdana, sans-serif;
+  font-size:1.2em ;
+  font-weight: bold;
+  text-align: justify;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 90px;
+}
